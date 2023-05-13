@@ -4,7 +4,10 @@ body {
     font-family: 'Poppins', sans-serif;
     max-width: 1280px;
     margin: 0 auto;
-    background-color: #5e5b5bad;
+    background-image: url('../imagens/fundopokemon.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: rgba(0, 0, 0,.8);
 }
 
 body.modo-escuro{
@@ -31,7 +34,8 @@ header #botao-alterar-tema {
 
 header .logo:hover, 
 header .imagem-botao:hover,
-main .cartao-pokemon:hover{
+main .cartao-pokemon:hover,
+main #cartao-fogo:hover{
     transform: scale(1.05);
     cursor: pointer;
 }
@@ -59,7 +63,33 @@ main .cartao-pokemon {
     transition: 0.2s ease-in-out;
 }
 
-main .cartao-pokemon:hover {
+main #cartao-fogo {
+    background: url('../imagens/fundofogo.jfif') no-repeat bottom ;
+    background-size: 140%; 
+    background-color: rgba(241, 227, 227, 0.4);
+
+}
+
+main #cartao-agua {
+    background: url('../imagens/fundoagua.jfif') no-repeat bottom ;
+    background-size: 155%; 
+    background-color: rgba(241, 227, 227, 0.4);
+}
+
+main #cartao-inseto {
+    background: url('../imagens/fundoinseto.jfif') no-repeat bottom;
+    background-size: 155%;
+    background-color: rgba(241, 227, 227, 0.4);
+}
+
+main #cartao-grama {
+    background: url('../imagens/fundoplanta.jfif') no-repeat bottom;
+    background-size: 155%;
+    background-color: rgba(241, 227, 227, 0.4);
+}
+
+main .cartao-pokemon:hover,
+main #cartao-fogo:hover {
     background-color: #96d9d6;
 }
 
