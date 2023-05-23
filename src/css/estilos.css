@@ -11,6 +11,8 @@ body {
 }
 
 body.modo-escuro{
+    background: url('../imagens/fundoescuro.png') no-repeat;
+    background-size: contain;
     background-color: #212121;
     color: #f5f5f5;
 }
